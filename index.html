@@ -1,44 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Hello World this is test for B Tech Ed IT</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bachelor of Technical Education in IT - BTechEdIT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+            --light-bg: #f9f9f9;
+        }
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 2rem;
-      background-color: #f9f9f9;
-    }
-    header, footer {
-      background-color: #333;
-      color: #fff;
-      padding: 1rem;
-      text-align: center;
-    }
-    main {
-      margin: 2rem 0;
-    }
-  </style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: white;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .section {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .section h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+        }
+
+        .eligibility-list {
+            list-style: none;
+            margin: 1rem 0;
+        }
+
+        .eligibility-list li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .eligibility-list li::before {
+            content: "•";
+            color: var(--secondary-color);
+            position: absolute;
+            left: 0;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+        }
+    </style>
 </head>
-
 <body>
-  
-  <header>
-    <h1>Welcome to B Tech Ed IT</h1>
-  </header>
-  
-  <main>
-    <b><p>Bachelor of Technical Education in Information Technology</p></b>
-    <p>Technical and Vocational Education and Training (TVET) has been one of the prominent sectors globally for a long. Dewey (1916) saw TVET as a tool for education reform in modernizing society. This has been equally vibrant in the present context as scholars (e.g. Maclean & Wilson, 2009) argue that TVET is an education and training that prepares an individual for gainful employment. TVET programs equip young people with the skills, knowledge, and competencies required to enter a particular type of professional career (OECD 2017). Hence, the role of TVET in preparing skilled human resources and enabling them to transition into the career path for gainful employment in specific and the country's economic development in a broad is inevitable.
+    <header>
+        <div class="header-content">
+            <h1>Bachelor of Technical Education in IT</h1>
+            <p>Empowering Future IT Educators</p>
+        </div>
+    </header>
 
-Bachelor's of Technical Education in Information Technology is a program designed for the students who has a Minimum D+ grade in each subject of grade 12 with CGPA 1.8 or more or a minimum score of second division marks in 10+2, PCL or equivalent in any disciplines and have background knowledge of Information Technology or Computer. The program opens the doors for graduates to be instructors for K-12 schools, resource materials developers, curriculum developers for the Information Technology fields, etc. Moreover, after this level, students will be eligible to do master's in TVET programs, MTech Ed, and Master's in Information Technology with some additional courses of IT.  </p>
-  </main>
+    <nav>
+        <ul>
+            <li><a href="#about">About Program</a></li>
+            <li><a href="#eligibility">Eligibility</a></li>
+            <li><a href="#career">Career Prospects</a></li>
+        </ul>
+    </nav>
 
-  <footer>
-    <p>&copy; 2025 BTechEdIT</p>
-  </footer>
+    <main>
+        <section id="about" class="section">
+            <h2>About the Program</h2>
+            <p>Technical and Vocational Education and Training (TVET) has been one of the prominent sectors globally. Following Dewey's (1916) vision of TVET as a tool for education reform, the field continues to evolve and adapt to modern needs.</p>
+            <p>Contemporary scholars like Maclean & Wilson (2009) emphasize TVET's role in preparing individuals for gainful employment. The OECD (2017) further highlights how TVET programs equip young people with essential skills, knowledge, and competencies for professional careers.</p>
+        </section>
 
+        <section id="eligibility" class="section">
+            <h2>Eligibility Criteria</h2>
+            <ul class="eligibility-list">
+                <li>Minimum D+ grade in each subject of grade 12 with CGPA 1.8 or higher</li>
+                <li>Minimum second division marks in 10+2, PCL or equivalent in any discipline</li>
+                <li>Background knowledge of Information Technology or Computer Science</li>
+            </ul>
+        </section>
+
+        <section id="career" class="section">
+            <h2>Career Opportunities</h2>
+            <ul class="eligibility-list">
+                <li>K-12 School IT Instructor</li>
+                <li>Educational Resource Material Developer</li>
+                <li>IT Curriculum Developer</li>
+                <li>Technical Education Specialist</li>
+            </ul>
+            <p>Graduates can pursue advanced studies in:</p>
+            <ul class="eligibility-list">
+                <li>Master's in TVET Programs</li>
+                <li>MTech Ed</li>
+                <li>Master's in Information Technology (with additional IT courses)</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BTechEdIT - Shaping the Future of Technical Education</p>
+    </footer>
 </body>
 </html>
